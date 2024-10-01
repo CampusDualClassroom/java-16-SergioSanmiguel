@@ -1,6 +1,6 @@
 package com.campusdual.classroom;
 
-public class Tractor{
+public class Tractor implements IMachine{
 
 	protected int horsePower = 0;
 	
@@ -8,6 +8,15 @@ public class Tractor{
 		this.horsePower = hp;
 	}
 
+	public void start(){
+		System.out.println("El tractor con " + horsePower + " caballos de fuerza esta encendido.");
+	}
+	public void stop(){
+		System.out.println("El tractor con " + horsePower + " caballos de fuerza esta apagado.");
+	}
+	public void maintenance(){
+		System.out.println("El tractor con " + horsePower + " caballos esta en mantenimiento.");
+	}
 	public void forward() {
 		System.out.println("El tractor avanza");
 	}
